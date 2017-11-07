@@ -9,7 +9,7 @@ function init() {
       if (keyValue=== code[index]){
           index++
 
-          if (keyValue === code.length){
+          if (index === code.length){
             alert("you got the konami code")
             index = 0
         }
