@@ -6,12 +6,12 @@ function init() {
     document.addEventListener('keydown', function(e){
       let keyValue = parseInt(e.which || e.detail)
 
-      if (pressedKey === code[index]){
-        index++
+      if (keyValue=== code[index]){
+          index++
 
-        if (pressedKey === code.length){
-          alert("you got the konami code")
-          index = 0
+          if (keyValue === code.length){
+            alert("you got the konami code")
+            index = 0
         }
       } else {
 
